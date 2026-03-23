@@ -1,0 +1,5 @@
+{
+  "name": "В неизвестность",
+  "description": "Кубик всё решит. Генератор случайных точек в заданном радиусе.",
+  "requestFramePermissions": ["geolocation"]
+}

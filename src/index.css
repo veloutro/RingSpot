@@ -1,0 +1,71 @@
+@import "tailwindcss";
+
+:root {
+  --bg-primary: #09090b;
+  --bg-secondary: #18181b;
+  --text-primary: #f4f4f5;
+  --text-secondary: #71717a;
+  --border-color: #27272a;
+  --accent-color: #3b82f6;
+}
+
+.light {
+  --bg-primary: #f4f4f5;
+  --bg-secondary: #ffffff;
+  --text-primary: #09090b;
+  --text-secondary: #52525b;
+  --border-color: #e4e4e7;
+  --accent-color: #2563eb;
+}
+
+/* Leaflet Dark Theme Overrides */
+.leaflet-container {
+  background: var(--bg-primary) !important;
+}
+
+.dark-popup .leaflet-popup-content-wrapper {
+  background: var(--bg-secondary) !important;
+  color: var(--text-primary) !important;
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  padding: 0;
+}
+
+.dark-popup .leaflet-popup-content {
+  margin: 0;
+  padding: 8px;
+}
+
+.dark-popup .leaflet-popup-tip {
+  background: var(--bg-secondary) !important;
+}
+
+.leaflet-popup-close-button {
+  color: var(--text-secondary) !important;
+}
+
+/* Custom range input styling */
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  background: var(--accent-color);
+  border-radius: 50%;
+  cursor: pointer;
+  border: 2px solid var(--bg-primary);
+}
+
+input[type="range"]::-moz-range-thumb {
+  width: 16px;
+  height: 16px;
+  background: var(--accent-color);
+  border-radius: 50%;
+  cursor: pointer;
+  border: 2px solid var(--bg-primary);
+}
+
+/* Theme transitions */
+body {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
